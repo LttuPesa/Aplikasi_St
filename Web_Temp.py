@@ -4,7 +4,6 @@ import pymongo
 import requests
 import streamlit as st
 from darts import TimeSeries
-from darts.models import LightGBMModel
 import pickle
 from darts.utils.missing_values import fill_missing_values
 import base64
