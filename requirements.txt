@@ -1,0 +1,6 @@
+plotly
+pandas
+requests
+darts
+pymongo
+streamlit
