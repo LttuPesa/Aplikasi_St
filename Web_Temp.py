@@ -5,6 +5,7 @@ import requests
 import streamlit as st
 from darts import TimeSeries
 from darts.models import LightGBMModel
+import pickle
 from darts.utils.missing_values import fill_missing_values
 import base64
 
@@ -19,7 +20,7 @@ collection = db["tes2"]
 
 # Load model using pickle
 with open('model.pkl', 'rb') as f:
-    model = LightGBMModel.load(f)
+    model = pickle.load(f)
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
