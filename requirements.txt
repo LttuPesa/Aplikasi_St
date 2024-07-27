@@ -4,3 +4,4 @@ requests
 darts
 pymongo
 streamlit
+lightgbm
